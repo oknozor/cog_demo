@@ -1,0 +1,19 @@
+name: Release
+
+on: [workflow_dispatch]
+
+jobs:
+  cog_check_job:
+    runs-on: ubuntu-latest
+    name: check conventional commit compliance
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Semver release
+        uses: oknozor/cocogitto-action@v1
+        with:
+          release: true
+          git-user: 'Cog Bot'
+          git-user-email: 'mycoolproject@org.org'
