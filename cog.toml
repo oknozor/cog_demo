@@ -1,0 +1,19 @@
+changelog_path = "CHANGELOG.md"
+
+pre_bump_hooks = [
+    "mvn clean package",
+    "mvn versions:set -DnewVersion={{version}}"
+]
+
+post_bump_hooks = [
+    "git push",
+    "git push origin {{version}}",
+    "mvn versions:set -DnewVersion={{version+minor}}-SNAPSHOT",
+    "coco chore \"Bump snapshot\"",
+]
+
+authors = [
+    { signature = "Paul Delafosse", username = "oknozor" },
+]
+
+[commit_types]
