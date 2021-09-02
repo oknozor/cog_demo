@@ -20,4 +20,11 @@ public class GreetingResource {
     public String world() {
         return "Hello world";
     }
+
+    @GET
+    @Path("/toto")
+    @Produces(MediaType.TEXT_PLAIN)
+    public String toto() {
+        return "Hello world";
+    }
 }
