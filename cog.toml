@@ -1,15 +1,16 @@
 changelog_path = "CHANGELOG.md"
 
 pre_bump_hooks = [
-    "mvn clean package",
+    "mvn --batch-mode clean package",
     "mvn versions:set -DnewVersion={{version}}"
 ]
 
 post_bump_hooks = [
     "git push",
     "git push origin {{version}}",
-    "mvn versions:set -DnewVersion={{version+minor}}-SNAPSHOT",
-    "coco chore \"Bump snapshot\"",
+    "mvn versions:set -DnewVersion={{version+1minor-SNAPSHOT}}",
+    "git add .",
+    "git commit -m \"chore(snapshot): Bump snapshot to {{version+1minor-SNAPSHOT}}\"",
     "git push"
 ]
 

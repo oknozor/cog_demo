@@ -1,9 +1,11 @@
+name: Check conventional commits
+
 on: [push]
 
 jobs:
   cog_check_job:
     runs-on: ubuntu-latest
-    name: check conventional commit compliance
+    name: Check conventional commit compliance
     steps:
       - uses: actions/checkout@v2
         with:
