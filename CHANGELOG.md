@@ -2,6 +2,20 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## 0.2.0 - 2021-09-02
+
+
+### Miscellaneous Chores
+
+b5f33d - Bump snapshot to 0.2.0-SNAPSHOT - Cog
+
+
+### Features
+
+2297ba - add route toto - [oknozor](https://github.com/oknozor)
+
+
+- - -
 ## 0.1.0 - 2021-09-02
 
 
