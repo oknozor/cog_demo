@@ -11,6 +11,13 @@ jobs:
         with:
           fetch-depth: 0
 
+      - uses: actions/setup-java@v2
+        name: Setup JDK 16
+        with:
+          distribution: 'adopt'
+          java-version: '11'
+          check-latest: true
+
       - name: Semver release
         uses: oknozor/cocogitto-action@v1
         with:
