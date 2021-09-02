@@ -21,6 +21,7 @@ public class GreetingResource {
         return "Hello world";
     }
 
+    // pouet
     @GET
     @Path("/toto")
     @Produces(MediaType.TEXT_PLAIN)
