@@ -2,6 +2,20 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## 0.2.1 - 2021-09-02
+
+
+### Bug Fixes
+
+d7d1aa - un fix - [oknozor](https://github.com/oknozor)
+
+
+### Miscellaneous Chores
+
+065f6b - Bump snapshot to 0.3.0-SNAPSHOT - Cog
+
+
+- - -
 ## 0.2.0 - 2021-09-02
 
 
