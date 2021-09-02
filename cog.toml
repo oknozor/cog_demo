@@ -10,6 +10,7 @@ post_bump_hooks = [
     "git push origin {{version}}",
     "mvn versions:set -DnewVersion={{version+minor}}-SNAPSHOT",
     "coco chore \"Bump snapshot\"",
+    "git push"
 ]
 
 authors = [
